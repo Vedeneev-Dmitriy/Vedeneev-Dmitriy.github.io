@@ -1,0 +1,128 @@
+﻿<html>
+	<head>
+		<title>Системное администрирование. Курсовой проект. </title>
+		<style>
+	body
+	{
+		background-image: url('background.png');
+		background-attachment: fixed;
+		background-size: cover;
+	}
+</style>
+		 <link rel="stylesheet" href="header_style.css">
+		 <img  src="header1.png" align="center" size="100%" usemap="#image-map">
+ 			<map name="image-map">
+ 					<area href="http://www.mgsu.ru/" coords="18,16,285,135" shape="rect">
+ 			</map>
+		<ul class="menu">
+			<li><a href=index.html>Главная <img src="folder_home.png" width="30" height="30" align="center"> </a>
+			</li>
+			<li><a href=presentasion.html>Сравнение NTFS и HFS+<img src="vesii.png" width="30" height="30" align="center" hspace="10px"></a>
+			</li>
+			<li><a href=#>Файерволлы и анти-spy ПО<img src="antispy.png" width="30" height="30" align="center" hspace="10px"></a>
+					<ul class="submenu">
+							<li><a href=comodo.html>Comodo Firewall</a></li>
+							<li><a href=outpost.html>Outpost Firewall Free</a></li>
+							<li><a href=spybot.html>Spybot Free</a></li>
+					</ul>
+			</li>
+			<li><a href=#>Файл-менеджеры<img src="file.png" width="30" height="30" align="center" hspace="10px"></a>
+					<ul class="submenu">
+							<li><a href=explorer.html>Проводник Windows</a></li>
+							<li><a href=totalcom.html>Total Commander</a></li>
+							<li><a href=finder.html>Finder</a></li>
+					</ul>
+			</li>
+			<li><a>Информация<img src="info.png" width="30" height="30" align="center" hspace="10px"></a>
+				<ul class="submenu">
+						<li><a href=opersyst.html>Выбор операционной системы</a></li>
+						<li><a href=filesystem.html>Выбор файловой системы</a></li>
+						<li><a href=sredstva.html>Средства оперативного восстановления</a></li>
+						<li><a href=biblio.html>Библиографический список</a></li>
+				</ul>
+	    </li>
+</ul>
+	</head>
+			<table align="center" width="60%" height = "600" border = "0">
+				<td valign="top" >
+					<br>
+					<br>
+					<br>
+					<font size="5" face="HelveticaNeueCyr-Light" color=#ffffff>
+				<font size="12" face="HelveticaNeueCyr-Roman"> <p align="center"> Презентация "Сравнение файловых систем NTFS и HFS+" </p> </font>
+				<br>
+				<img src="Present\0.png" align="center"  width="100%">
+				<font size="4" face="HelveticaNeueCyr-UltraLightItalic"> <p align="center"> Слайд 1. Тема</p> </font>
+				Здравствуйте! <p> Сегодня я хотел бы рассмотреть и сравнить файловые системы NTFS и HFS+.</p>
+				<img src="Present\1.png" align="center"  width="100%">
+				<font size="4" face="HelveticaNeueCyr-UltraLightItalic"> <p align="center"> Слайд 2. Файловая система NTFS</p> </font>
+				Файловая система NTFS разрабатывалась Microsoft в начале 1990 х гг. как основная файловая система для серверных версий операционных систем Windows. NTFS была представлена в 1993 году в операционной системе Windows NT 3.1. В настоящее время NTFS рассматривается в качестве предпочтительной файловой системы как для серверных, так и для клиентских версий Windows. NTFS заменила использовавшуюся в MS-DOS и Microsoft Windows файловую систему FAT. NTFS поддерживает систему метаданных и использует специализированные структуры данных для хранения информации о файлах для улучшения производительности, надёжности и эффективности использования дискового пространства. NTFS хранит информацию о файлах в главной файловой таблице — Master File Table (MFT).
+				<br>
+				<br>
+				<img src="Present\2.png" align="center"  width="100%">
+				<font size="4" face="HelveticaNeueCyr-UltraLightItalic"> <p align="center"> Слайд 3. Главная файловая таблица</p> </font>
+				MFT (англ. Master File Table) — главная файловая таблица (база данных), в которой хранится информация о содержимом тома с файловой системой NTFS, представляющая собой таблицу, строки которой соответствуют файлам тома, а столбцы — атрибутам файлов. NTFS имеет встроенные возможности разграничивать доступ к данным для различных пользователей и групп пользователей (списки контроля доступа — Access Control Lists (ACL)), а также назначать квоты (ограничения на максимальный объём дискового пространства, занимаемый теми или иными пользователями). NTFS использует систему журналирования для повышения надёжности файловой системы.
+				<br>
+				<br>
+				Каждый файл на томе NTFS представлен записью в специальном файле, называемом главной файловой таблицей (MFA — master file table). NTFS резервирует первые 16 записей таблицы для специальной информации. Первая запись этой таблицы описывает непосредственно главную файловую таблицу, за ней следует зеркальная запись (mirror record) MFT. Если первая запись MFT разрушена, то NTFS читает вторую запись для отыскания зеркального файла MFT, первая запись которого идентична первой записи MFT. Местоположения сегментов данных MFT и зеркального файла MFT записаны в секторе начальной загрузки. Дубликат сектора начальной загрузки находится в логическом центре диска. Третья запись MFT — файл регистрации (log file); используется для восстановления файлов. Семнадцатая и последующие записи главной файловой таблицы используются собственно файлами и каталогами (также рассматриваются как файлы NTFS) на томе.
+				<br>
+				<br>
+				<img src="Present\3.png" align="center"  width="100%">
+				<font size="4" face="HelveticaNeueCyr-UltraLightItalic"> <p align="center"> Слайд 4. Атрибуты MFT, часть 1</p> </font>
+				Атрибуты файла в записях MFT расположены в порядке возрастания числовых значений кодов типа, причем некоторые типы атрибутов могут встречаться в записи более одного раза: например, если у файла есть несколько атрибутов данных или несколько имен. Обязательными для каждого файла в томе NTFS являются атрибут стандартной информации, атрибут имени файла, атрибут дескриптора защиты и атрибут данных. Остальные атрибуты могут встречаться при необходимости.
+				<br>
+				<br>
+				<img src="Present\4.png" align="center"  width="100%">
+				<font size="4" face="HelveticaNeueCyr-UltraLightItalic"> <p align="center"> Слайд 5. Атрибуты MFT, часть 2</p> </font>
+				Большой вклад в эффективность работы файловой системы вносит организация каталога. Каталог в NTFS представляет собой специальный файл, хранящий ссылки на другие файлы и каталоги, создавая иерархическое строение данных на диске. Файл каталога поделен на блоки, каждый из которых содержит имя файла, базовые атрибуты и ссылку на элемент MFT, который уже предоставляет полную информацию об элементе каталога. Главный каталог диска — корневой — ничем не отличается от обычных каталогов, кроме специальной ссылки на него из начала метафайла в MFT.
+				Внутренняя структура каталога представляет собой бинарное дерево, подобно тому как это организованно в HPFS.
+				<br>
+				<br>
+				<img src="Present\5.png" align="center"  width="100%">
+				<font size="4" face="HelveticaNeueCyr-UltraLightItalic"> <p align="center"> Слайд 6. Файловая система HFS+ </p> </font>
+				HFS Plus (Hierarchical File System Plus) или Mac OS Extended — файловая система, разработанная Apple Inc. для замены ранее использовавшейся HFS, основной файловой системы на компьютерах Macintosh.
+				<br>
+				<br>
+				<img src="Present\6.png" align="center"  width="100%">
+				<font size="4" face="HelveticaNeueCyr-UltraLightItalic"> <p align="center"> Слайд 7. Отличие HFS+ от HFS</p> </font>
+				<br>
+				<img src="Present\7.png" align="center"  width="100%">
+				<font size="4" face="HelveticaNeueCyr-UltraLightItalic"> <p align="center"> Слайд 8. Архитектура раздела HFS+</p> </font>
+				В секторах 0 и 1 раздела находятся блоки загрузки (boot blocks), также в разделе есть копии этих секторов.
+				<br>
+				<br>
+				В секторе 2 находится заголовок раздела (Volume Header), содержащий широкое разнообразие данных о самом разделе: размер, дату и время создания, положение других структур раздела. Заголовок раздела всегда находится в одном и том же месте.
+				<br>
+				<br>
+				Файл размещения (Allocation File), каждый бит которого соответствует, занятому блоки или свободному блоку. Ноль означает, что блок свободен, единица означает, что блок занят. Файл размещения хранится как обычный файл. Он не занимает специально зарезервированное место в начале диска, может изменяться в размерах и состоять из нескольких фрагментов.
+				<br>
+				<br>
+				Файл каталогов (Catalog File) представляет собой B-Tree, хранящее записи о всех файлах и директориях, хранящихся на разделе. Запись в файле каталогов занимает 4КБ в Mac OS и 8КБ в Mac OS X.
+				<br>
+				<br>
+				Файл переполнения экстентов (Extents Overflow File) также представляет собой B-Tree, хранящее записи об экстентах. (Экстент (англ. extent, протяженность) — в файловых системах, непрерывная область носителя информации. Как правило, в файловых системах с поддержкой экстентов большие файлы состоят из нескольких экстентов, не связанных друг с другом напрямую.
+				<br>
+				<br>
+				Файл аттрибутов (Attributes File) - нововведение HFS Plus относительно HFS, которое также представляет собой B-tree.
+				<br>
+				<br>
+				Файл запуска (Startup File) спроектирован для ОС помимо Mac OS, не имеющих поддержки HFS и HFS+.
+				<br>
+				<br>
+				<img src="Present\8.png" align="center"  width="100%">
+				<font size="4" face="HelveticaNeueCyr-UltraLightItalic"> <p align="center"> Слайд 9. Сравнение файловых система, часть 1</p> </font>
+				<br>
+				<img src="Present\9.png" align="center"  width="100%">
+				<font size="4" face="HelveticaNeueCyr-UltraLightItalic"> <p align="center"> Слайд 10. Сравнение файловых система, часть 2</p> </font>
+				<br>
+				<img src="Present\10.png" align="center"  width="100%">
+				<font size="4" face="HelveticaNeueCyr-UltraLightItalic"> <p align="center"> Слайд 11. Сравнение файловых система, часть 3</p> </font>
+				<br>
+				Спасибо за внимание !
+				<br>
+				<br>
+				</font>
+				</td>
+				<a href="#top"><div class="fixed_button"><img src="Up.png" width="60" height="60" align="center"></div></a>
+		</body>
+</html>

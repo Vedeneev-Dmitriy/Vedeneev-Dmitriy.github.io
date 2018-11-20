@@ -1,0 +1,65 @@
+body {
+    font: 14px 'HelveticaNeueCyr-Medium';
+    margin: 0;
+    padding: 0;
+}
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+ul.menu > li {
+    text-align: center;
+    align-items: center;
+    float: left;
+    position: relative;
+    width: 20%;
+
+}
+ul.menu > li > a {
+    display: block;
+    padding: 15px;
+    color: white;
+    background-color: rgb(66, 71, 108);
+    text-decoration: none;
+}
+ul.menu > li > a:hover {
+    background-color: rgb(66, 40, 120);
+}
+ul.submenu {
+    display: none;
+    position: absolute;
+  left: 1px; right: 1px; top: 60px; bottom: 10px;
+    background-color: rgb(66, 71, 108);
+    border: 1px solid rgb(66, 71, 108);
+}
+ul.submenu > li {
+    display: block;
+}
+ul.submenu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: rgb(66, 71, 108);
+    text-decoration: none;
+}
+ul.submenu > li > a:hover {
+    text-decoration: underline;
+}
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+.fixed_button{
+  position:fixed; /*задаём тип позиции, в нашем случае - фиксированная*/
+  top:90%;      /* отступ сверху*/
+  left:2%;       /* отступ слева*/
+  z-index:auto;    /*позиция относительно дальности*/
+  display:block;
+}
